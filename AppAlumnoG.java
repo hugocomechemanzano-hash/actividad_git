@@ -1,19 +1,20 @@
-import java.util.Scanner;
-public class AppAlumnoG {
+import java.util.Random;
+public class AlunnoG {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.tn);
+	private String nombre;
+	private String telefono;
+	private int edad;
+	private double nota1;
+	private double nota2;
+	private double nota3;
 	
-		System.out.println(" --. Registro de Alumno ...
-		System.out.print("Introduce el nonbre: ");
-		String nombre = sc.nextLine();
+	public AlumnoG(String nombre, String telefono, int edad) {
+		this.nombre = nombre;
+		this.telefono = telefono;
+		this.edad = edad;
 		
-		System.out.print("Introduce el teléfono: ");
-		String telefono = sc.nextLine();
-		
-		System.out.print("Introduce la edad: ");
-		int edad = sc.nextInt();
-		
-		// Creamos el objeto Alumno (las notas se generan solas en el construc$
-		AlumnoG alumno = new AlumnoG(nombre, telefono, edad);
+		Random r = new Random();
+		this.nota1 = 1 + r.nextInt(10);
+		this.nota2 = 1 + r.nextInt(10);
+		this.nota3 = 1 + r.nextInt(10);
 }
