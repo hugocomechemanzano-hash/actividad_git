@@ -3,7 +3,6 @@ public class AlunnoG {
 
 	private String nombre;
 	private String telefono;
-	private int edad;
 	private double nota1;
 	private double nota2;
 	private double nota3;
